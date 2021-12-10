@@ -90,8 +90,8 @@ header {
 .header-contacts {
   margin-left: auto;
 }
-.header-contacts > li {
-  margin-left: 50px;
+.header-contacts > li:not(:first-child) {
+  margin-left: 30px;
 }
 
 /* =================  ЛОГОТИП  ================= */
@@ -144,7 +144,12 @@ header {
 
 /* телефон и почта */
 .header-contacts > li {
-  outline: 1px solid #000;
+  /* outline: 1px solid #000; */
+}
+
+.header-contacts a {
+  display: flex;
+  align-items: center;
 }
 
 header .header-contacts a {
@@ -158,12 +163,23 @@ header .header-contacts a {
 .envelope {
   width: 16px;
   height: 12px;
-  fill: var(--secondary-text-color);
 }
-.header-contacts a:hover .envelope,
-.header-contacts a:focus .envelope,
-.footer-contacts a:focus .envelope,
-.footer-contacts a:hover .envelope {
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+.envelope,
+.smartphone {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.header-contacts a:hover .icon-link,
+.header-contacts a:focus .icon-link,
+.footer-contacts a:focus .icon-link,
+.footer-contacts a:hover .icon-link {
   fill: var(--secondary-color);
 }
 
@@ -231,6 +247,17 @@ header .header-contacts a {
 
 /* =============  НАШИ ПРЕИМУЩЕСТВА  ============= */
 
+.icon-block {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .benefits-list {
   display: flex;
   justify-content: space-between;
@@ -257,7 +284,7 @@ header .header-contacts a {
 .actions-list {
   display: flex;
   justify-content: space-between;
-  width: 370px;
+  /* width: 370px; */
 }
 
 /*===============  НАША КОМАНДА  ================ */
