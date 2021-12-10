@@ -143,12 +143,28 @@ header {
 }
 
 /* телефон и почта */
-.header-contacts a {
+.header-contacts > li {
+  outline: 1px solid #000;
+}
+
+header .header-contacts a {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   line-height: 1.14em;
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+  fill: var(--secondary-text-color);
+}
+.header-contacts a:hover .envelope,
+.header-contacts a:focus .envelope,
+.footer-contacts a:focus .envelope,
+.footer-contacts a:hover .envelope {
+  fill: var(--secondary-color);
 }
 
 .header-contacts a:hover,
@@ -161,10 +177,23 @@ header {
 /*=========== СТИЛИ КОНТЕНТА  ============ */
 
 /* герой */
-.hero {
-  background-color: #2f303a;
+.overlay {
+  height: 600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/overlay.jpg");
+  background-color: #c4c4c4;
+}
+
+.hero {
+  padding: 0px;
   text-align: center;
 }
 

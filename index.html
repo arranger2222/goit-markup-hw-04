@@ -31,7 +31,14 @@
             </nav>
             <!-- почта и телефон -->
             <ul class="header-contacts">
-                <li><a href="mailto:info@example.com">info@devstudio.com</a></li>
+                <li>   
+                    <a href="mailto:info@example.com">
+                    <svg class="envelope">
+                        <use href="images/sprite.svg#icon-envelope"></use>
+                    </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
                 <li><a href="tel:+380991111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
@@ -44,8 +51,11 @@
     <!-- герой -->
     
     <section class="hero">
-            <h1>Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button">Заказать услугу</button>
+            <div class="overlay">
+                <h1>Эффективные решения <br> для вашего бизнеса</h1>
+                <button type="button">Заказать услугу</button>
+            </div>
+            
      </section>       
            
     <!-- наши особенности -->
