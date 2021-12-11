@@ -180,15 +180,15 @@ header .header-contacts a {
 
 .header-contacts a:hover .icon-link,
 .header-contacts a:focus .icon-link,
-.footer-contacts a:focus .icon-link,
-.footer-contacts a:hover .icon-link {
+.footer-contacts- a:focus .icon-link,
+.footer-contacts- a:hover .icon-link {
   fill: var(--secondary-color);
 }
 
 .header-contacts a:hover,
 .header-contacts a:focus,
-.footer-contacts a:focus,
-.footer-contacts a:hover {
+.footer-contacts-list a:focus,
+.footer-contacts-list a:hover {
   color: var(--secondary-color);
 }
 
@@ -269,12 +269,14 @@ header .header-contacts a {
   width: 270px;
 }
 
-.benefits h3 {
+.benefits h3,
+.footer-social h3 {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /* =============  ЧЕМ МЫ ЗАНИМАЕМСЯ  ============= */
@@ -306,7 +308,9 @@ header .header-contacts a {
 }
 
 .social-link:hover,
-.social-link:focus {
+.social-link:focus,
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--secondary-color);
 }
 
@@ -385,11 +389,6 @@ header .header-contacts a {
   align-items: center;
 }
 
-.company-logo {
-  width: 106px;
-  height: 60px;
-}
-
 .customers-link {
   width: 170px;
   height: 92px;
@@ -402,11 +401,13 @@ header .header-contacts a {
   justify-content: space-between;
 }
 
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   border-color: var(--secondary-color);
 }
 
-.customers-link:hover .company-logo {
+.customers-link:hover .company-logo,
+.customers-link:focus .company-logo {
   fill: var(--secondary-color);
 }
 
@@ -512,12 +513,25 @@ footer {
   padding: 60px 0;
 }
 
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
 /* красит логотип в белый */
 footer a {
   color: #fff;
 }
 
-.footer-contacts a {
+.footer-contacts-list a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -533,6 +547,29 @@ address {
   letter-spacing: 0.03em;
 }
 
-.footer-contacts > li:not(:last-child) {
+.footer-contacts-list > li:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-social-logo {
+  fill: currentColor;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
 }
