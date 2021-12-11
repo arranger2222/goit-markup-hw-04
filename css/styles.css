@@ -144,9 +144,6 @@ header {
 }
 
 /* телефон и почта */
-.header-contacts > li {
-  /* outline: 1px solid #000; */
-}
 
 .header-contacts a {
   display: flex;
@@ -300,10 +297,7 @@ header .header-contacts a {
   /* outline: 1px solid red; */
 }
 
-.instagram,
-.twitter,
-.facebook,
-.linkedin {
+.social-link svg {
   fill: var(--icon-primary-color);
 }
 
@@ -312,36 +306,20 @@ header .header-contacts a {
   background-color: var(--secondary-color);
 }
 
-/* .header-contacts a:hover .icon-link */
-.social-link:hover .instagram,
-.social-link:hover .twitter,
-.social-link:hover .facebook,
-.social-link:hover .linkedin,
-.social-link:focus .instagram,
-.social-link:focus .twitter,
-.social-link:focus .facebook,
-.social-link:focus .linkedin {
-  fill: white;
+.social-link:hover svg,
+.social-link:focus svg {
+  fill: #fff;
 }
 
 .social-link:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-item {
-  /* outline: 1px solid royalblue; */
-}
-
-.social-link > svg {
-  width: 20px;
-  height: 20px;
-}
-
 .social-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* outline: 1px dotted #000; */
+  /* outline: 1px solid #000; */
 }
 
 .team {
@@ -368,29 +346,11 @@ header .header-contacts a {
   width: 270px;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
-  
 }
 
-.team-list>li{
-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-0px 1px 1px rgba(0, 0, 0, 0.14),
-0px 1px 3px rgba(0, 0, 0, 0.12) ;
-
-}
-  /* Effect: Drop shadow
-Radius: 1px
-Offset: 0px, 2px
-rgba(0, 0, 0, 0.2) */
-
-  /* }Effect: Drop shadow
-Radius: 1px
-Offset: 0px, 1px
-rgba(0, 0, 0, 0.14) */
-
-  /* Effect: Drop shadow
-Radius: 3px
-Offset: 0px, 1px
-rgba(0, 0, 0, 0.12) */
+.team-list > li {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team h3 {
@@ -412,6 +372,42 @@ rgba(0, 0, 0, 0.12) */
   text-align: center;
   padding: 30px 32px;
   /* outline: 1px solid #0f0; */
+}
+
+/* ================== ПОСТОЯННЫЕ КЛИЕНТЫ ============= */
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo {
+  width: 106px;
+  height: 60px;
+}
+
+.customers-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-link:hover {
+  border-color: var(--secondary-color);
+}
+
+.customers-link:hover .company-logo {
+  fill: var(--secondary-color);
+}
+
+.company-logo {
+  fill: var(--icon-primary-color);
 }
 
 /*================= ПОРТФОЛИО  ================= */
