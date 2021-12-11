@@ -2,7 +2,11 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --secondary-color: #2196f3;
-  --icon-primary-color: #afb1b8;
+}
+
+/* --------/ ЦВЕТ ИКОНОК/---------------- */
+a {
+  color: #afb1b8;
 }
 
 /* ================  ГЛОБАЛЬНЫЕ СТИЛИ ===================*/
@@ -298,7 +302,7 @@ header .header-contacts a {
 }
 
 .social-link svg {
-  fill: var(--icon-primary-color);
+  fill: currentColor;
 }
 
 .social-link:hover,
@@ -407,7 +411,7 @@ header .header-contacts a {
 }
 
 .company-logo {
-  fill: var(--icon-primary-color);
+  fill: currentColor;
 }
 
 /*================= ПОРТФОЛИО  ================= */
