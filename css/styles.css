@@ -2,6 +2,7 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --secondary-color: #2196f3;
+  --icon-primary-color: #afb1b8;
 }
 
 /* ================  ГЛОБАЛЬНЫЕ СТИЛИ ===================*/
@@ -284,16 +285,72 @@ header .header-contacts a {
 .actions-list {
   display: flex;
   justify-content: space-between;
-  /* width: 370px; */
 }
 
 /*===============  НАША КОМАНДА  ================ */
+.social-list {
+  margin-top: 16px;
+}
+
+.social-item,
+.social-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* outline: 1px solid red; */
+}
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  fill: var(--icon-primary-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--secondary-color);
+}
+
+/* .header-contacts a:hover .icon-link */
+.social-link:hover .instagram,
+.social-link:hover .twitter,
+.social-link:hover .facebook,
+.social-link:hover .linkedin,
+.social-link:focus .instagram,
+.social-link:focus .twitter,
+.social-link:focus .facebook,
+.social-link:focus .linkedin {
+  fill: white;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item {
+  /* outline: 1px solid royalblue; */
+}
+
+.social-link > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* outline: 1px dotted #000; */
+}
+
 .team {
   background-color: #f5f4fa;
 }
 
 .team h2,
-.actions h2 {
+.actions h2,
+.our-customers h2 {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -310,6 +367,30 @@ header .header-contacts a {
 .team li {
   width: 270px;
   background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  
+}
+
+.team-list>li{
+box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 1px 3px rgba(0, 0, 0, 0.12) ;
+
+}
+  /* Effect: Drop shadow
+Radius: 1px
+Offset: 0px, 2px
+rgba(0, 0, 0, 0.2) */
+
+  /* }Effect: Drop shadow
+Radius: 1px
+Offset: 0px, 1px
+rgba(0, 0, 0, 0.14) */
+
+  /* Effect: Drop shadow
+Radius: 3px
+Offset: 0px, 1px
+rgba(0, 0, 0, 0.12) */
 }
 
 .team h3 {
@@ -329,7 +410,8 @@ header .header-contacts a {
 
 .team-name {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 32px;
+  /* outline: 1px solid #0f0; */
 }
 
 /*================= ПОРТФОЛИО  ================= */
